@@ -1,6 +1,7 @@
 import DropdownMenu from "./DropdownMenu";
 
 function App() {
+  // this is the options array which is being sent to the DropdownMenu component
   const options = [
     {
       language: "C++",

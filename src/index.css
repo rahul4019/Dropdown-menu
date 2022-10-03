@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
-  background-color: #d2daff;
+  background: #d2daff;
 }
 
 code {
@@ -31,11 +31,6 @@ code {
   height: 50px;
 }
 
-.dropdown:hover::before {
-  top: 23px;
-  transform: rotate(-225deg);
-}
-
 .dropdown input {
   position: absolute;
   top: 0;
@@ -43,14 +38,14 @@ code {
   height: 100%;
   box-sizing: border-box;
   padding-left: 20px;
+  border-radius: 7px;
   border: none;
   outline: none;
-  border-radius: 7px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: pointer;
   font-size: larger;
-  background: #eef1ff;
   color: #585a5b;
+  background: #eef1ff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #menu-indicator {
@@ -84,10 +79,10 @@ code {
   top: 70px;
   width: 100%;
   border-radius: 7px;
-  background-color: #eef1ff;
+  background: #eef1ff;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  overflow: hidden;
 }
 
 .option {

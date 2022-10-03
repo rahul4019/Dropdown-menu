@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
+  background-color: #d2daff;
 }
 
 code {
@@ -19,19 +29,6 @@ code {
   margin-top: 100px;
   width: 350px;
   height: 50px;
-}
-
-.dropdown::before {
-  content: "";
-  height: 10px;
-  width: 10px;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  z-index: 1;
 }
 
 .dropdown:hover::before {
@@ -48,21 +45,34 @@ code {
   padding-left: 20px;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 7px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: pointer;
   font-size: larger;
+  background: #eef1ff;
+  color: #585a5b;
+}
+
+#menu-indicator {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  transition: all 0.5s ease;
 }
 
 .outer-container {
   display: none;
+  animation: fadeIn 1s;
 }
 
 .outer-container::before {
   content: "";
   position: absolute;
   border: 15px solid;
-  border-color: transparent transparent #fff #fff;
+  border-color: transparent transparent #eef1ff #eef1ff;
   top: 55px;
   left: 160px;
   z-index: 5;
@@ -73,7 +83,8 @@ code {
   position: absolute;
   top: 70px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 7px;
+  background-color: #eef1ff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   overflow: hidden;
@@ -84,7 +95,7 @@ code {
   cursor: pointer;
   font-weight: 600;
   font-size: 1.2rem;
-  color: gray;
+  color: #505050;
 }
 
 .option img {
@@ -94,5 +105,5 @@ code {
 }
 
 .option:hover {
-  background: skyblue;
+  background: #b1b2ff;
 }

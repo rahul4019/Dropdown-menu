@@ -54,10 +54,6 @@ code {
   font-size: larger;
 }
 
-.dropdown:hover .outer-container {
-  display: block;
-}
-
 .outer-container {
   display: none;
 }

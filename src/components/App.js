@@ -22,6 +22,10 @@ function App() {
       language: "Swift",
       logo: "https://cdn-icons-png.flaticon.com/512/732/732250.png",
     },
+    {
+      language: "Programming Languages",
+      logo: "https://cdn-icons-png.flaticon.com/512/1810/1810746.png"
+    }
   ];
 
   return <DropdownMenu options={options} />;
